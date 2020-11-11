@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1208cb4bfc946f7aa1d7b5348cb086, type: 3}
+  m_Name: BasketBallImageDatabase
+  m_EditorClassIdentifier: 
+  m_Images:
+  - Name: Screenshot_2020-11-11 ARCore Augmented Images Google Codelabs
+    Width: 0
+    Quality: 100
+    TextureGUID: 5918140f49f9e764f9f749d00c204a8c
+    LastModifiedTime: 11-11-2020 22:36:38
+  m_RawData: 
+  m_IsRawDataDirty: 1
+  m_CliVersion: 1.2
