@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978689057550532902}
-  m_LocalRotation: {x: -0.64528215, y: 0.28915563, z: 0.28915563, w: 0.64528215}
-  m_LocalPosition: {x: -0.0000000012868355, y: 0, z: 0.41}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.046, z: 0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 48.275}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &3562641677617452089
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0009352936
+  m_Radius: 0.029
   m_Center: {x: -9.604264e-10, y: -2.8622937e-17, z: -8.545058e-17}
 --- !u!54 &5861360537188509564
 Rigidbody:
@@ -127,5 +127,5 @@ MonoBehaviour:
   m_ThrowForce: 70
   m_ThrowDirectionX: 0.17
   m_ThrowDirectionY: 0.67
-  m_BallCameraOffset: {x: 0, y: -1.4, z: 3}
+  m_BallCameraOffset: {x: 0, y: -0.046, z: 0.14}
   ARCam: {fileID: 0}

@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class PlaceHoop : MonoBehaviour
 {
     public GameObject Hoop;
+    public GameObject Ball;
     public Transform FirstPersonCamera;
     private List<DetectedPlane> allPlanes;
     public TextMeshProUGUI PlaneCount;
@@ -44,6 +45,8 @@ public class PlaceHoop : MonoBehaviour
             {
                 var gameObject = Instantiate(Hoop, hit.Pose.position, Hoop.transform.rotation);
                 isPlaced = true;
+
+                StartCoroutine(BallSpawn());
             }
         }
 
@@ -54,5 +57,12 @@ public class PlaceHoop : MonoBehaviour
 
         Session.GetTrackables<DetectedPlane>(allPlanes, TrackableQueryFilter.All);
         PlaneCount.text = "Plane Count:" + allPlanes.Count;
+    }
+
+    IEnumerator BallSpawn()
+    {
+        yield return new WaitForSeconds(3);
+        var ball = Instantiate(Ball);
+        Hoop.GetComponent<SwipeControl>().rotatespeed = 0;
     }
 }

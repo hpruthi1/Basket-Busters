@@ -75,8 +75,8 @@ public class BallControl : MonoBehaviour
 			directionChosen = false;
 		}
 
-		// 5 seconds after throwing the ball, we reset it's position
-		if(Time.time - endTime >= 5 && Time.time - endTime <= 6)
+		// 3 seconds after throwing the ball, we reset it's position
+		if(Time.time - endTime >= 3 && Time.time - endTime <= 4)
 			ResetBall();
 
 	}
