@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1627484961012654323}
   - component: {fileID: 4292254760990969147}
   - component: {fileID: 5861360537188509564}
+  - component: {fileID: 5407093081502606202}
   m_Layer: 0
   m_Name: Basketball
   m_TagString: Untagged
@@ -111,3 +112,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5407093081502606202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978689057550532902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7255d1f57296624ea02b44cf8507760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ThrowForce: 70
+  m_ThrowDirectionX: 0.17
+  m_ThrowDirectionY: 0.67
+  m_BallCameraOffset: {x: 0, y: -1.4, z: 3}
+  ARCam: {fileID: 0}
