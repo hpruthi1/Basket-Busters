@@ -12,6 +12,8 @@ public class PlaceHoop : MonoBehaviour
     private List<DetectedPlane> allPlanes;
     public TextMeshProUGUI PlaneCount;
 
+    private bool isPlaced = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,10 @@ public class PlaceHoop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPlaced)
+        {
+            return;
+        }
         Touch touch;
         if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
         {
@@ -37,6 +43,7 @@ public class PlaceHoop : MonoBehaviour
             if((hit.Trackable is DetectedPlane) && Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position, hit.Pose.rotation * Vector3.up) > 0)
             {
                 var gameObject = Instantiate(Hoop, hit.Pose.position, Hoop.transform.rotation);
+                isPlaced = true;
             }
         }
 
