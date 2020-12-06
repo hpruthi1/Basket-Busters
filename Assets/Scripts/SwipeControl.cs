@@ -6,6 +6,7 @@ public class SwipeControl : MonoBehaviour
 { 
     public float rotatespeed = 10f;
     private float startingPosition;
+    public CollisionDetection cd;
 
     void Update()
     {

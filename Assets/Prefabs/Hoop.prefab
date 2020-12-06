@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotatespeed: 30
+  cd: {fileID: 8793789379155837598}
 --- !u!1 &7549732208377608889
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +247,6 @@ GameObject:
   - component: {fileID: 7142271829528522960}
   - component: {fileID: 6185706599849257976}
   - component: {fileID: 3510800272598823654}
-  - component: {fileID: 1512336118108449465}
   - component: {fileID: 8780232279440645706}
   m_Layer: 0
   m_Name: Object01
@@ -316,20 +316,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1512336118108449465
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7549732208377608889}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4099932157646263679, guid: 1f88d3a054c4d46c59857a75957b3064, type: 3}
 --- !u!65 &8780232279440645706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -341,8 +327,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 219.3528, y: 87.57337, z: 2.6629357}
-  m_Center: {x: -5.9292306e-21, y: -0.0000038146973, z: 0.000008046627}
+  m_Size: {x: 221.35522, y: 87.573364, z: 29.049746}
+  m_Center: {x: -1.0014949, y: -0.0000029802325, z: 10.138515}
 --- !u!1 &9124275473210771897
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +339,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2807057541551937816}
   - component: {fileID: 3267267839988476568}
+  - component: {fileID: 1321887139853045956}
+  - component: {fileID: 8793789379155837598}
   m_Layer: 0
   m_Name: BallCollider
   m_TagString: Ring
@@ -387,3 +375,33 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1321887139853045956
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9124275473210771897}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &8793789379155837598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9124275473210771897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8585256e2af264498c84f2940d9629a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 0}
+  Score: 0
