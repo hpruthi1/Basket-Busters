@@ -332,6 +332,8 @@ MonoBehaviour:
   Hoop: {fileID: 7484147749153649588, guid: fac53fe248fdd404c948df562a505731, type: 3}
   Ball: {fileID: 978689057550532902, guid: e860df394aa43de4da58de2d3ce8f018, type: 3}
   FirstPersonCamera: {fileID: 1411289991}
+  database: {fileID: 11400000, guid: d12b8a4a3030c894f97943f37aad7954, type: 2}
+  BallSpawner: {fileID: 2800000, guid: 5918140f49f9e764f9f749d00c204a8c, type: 3}
   PlaneCount: {fileID: 1388670832}
 --- !u!1 &1388670830
 GameObject:
