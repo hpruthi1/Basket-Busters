@@ -25,6 +25,9 @@ public class BallControl : MonoBehaviour
 	private float duration;
 	private bool directionChosen = false;
 	private bool throwStarted = false;
+	public int ballCount = 0;
+
+	public PlaceHoop placeHoop;
 
 	[SerializeField]
 	GameObject ARCam;
@@ -34,6 +37,7 @@ public class BallControl : MonoBehaviour
 	private void Start(){
 		rb = gameObject.GetComponent<Rigidbody>();
 		ARCam = GameObject.Find("First Person Camera");
+		placeHoop = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlaceHoop>();
 		transform.parent = ARCam.transform;
 		ResetBall();
 	}
@@ -53,6 +57,7 @@ public class BallControl : MonoBehaviour
 			duration = endTime - startTime;
 			direction = Input.mousePosition - startPosition;
 			directionChosen = true;
+			UpdateThrows();
 		}
 
 		// Direction was chosen, which will release/throw the ball
@@ -90,6 +95,11 @@ public class BallControl : MonoBehaviour
 
 		Vector3 ballPos = ARCam.transform.position + ARCam.transform.forward * m_BallCameraOffset.z + ARCam.transform.up * m_BallCameraOffset.y;
 		transform.position = ballPos;
+	}
+
+	public void UpdateThrows()
+    {
+		placeHoop.BallCountText.text = "Throws:" + (ballCount++);
 	}
 
 }

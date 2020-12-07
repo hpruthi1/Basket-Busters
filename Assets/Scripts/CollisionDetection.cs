@@ -6,6 +6,8 @@ using TMPro;
 public class CollisionDetection : MonoBehaviour
 {
     public TextMeshProUGUI ScoreText;
+    public TextMeshProUGUI BallCountText;
+    public TextMeshProUGUI TimeText;
     public int Score = 0;
 
     private void OnTriggerEnter(Collider other)

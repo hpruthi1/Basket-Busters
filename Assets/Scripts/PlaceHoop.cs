@@ -18,8 +18,10 @@ public class PlaceHoop : MonoBehaviour
     public Texture2D BallSpawner;
     public TextMeshProUGUI PlaneCount;
     public TextMeshProUGUI ScoreText;
-
+    public TextMeshProUGUI BallCountText;
+    
     private bool isPlaced = false;
+    public bool isBallSpawned = false;
 
 
     // Start is called before the first frame update
@@ -53,6 +55,7 @@ public class PlaceHoop : MonoBehaviour
                     var gameObject = Instantiate(Hoop, hit.Pose.position, Hoop.transform.rotation);
                     isPlaced = true;
                     gameObject.GetComponent<SwipeControl>().cd.ScoreText = ScoreText;
+                    gameObject.GetComponent<SwipeControl>().cd.BallCountText = BallCountText;
                 }
             }
         }
@@ -72,6 +75,7 @@ public class PlaceHoop : MonoBehaviour
             if (!CreatedObjects.ContainsKey(marker.Name))
             {
                 GameObject go = Instantiate(Ball);
+                isBallSpawned = true;
                 CreatedObjects[marker.Name] = Ball.transform;
             }
         }
