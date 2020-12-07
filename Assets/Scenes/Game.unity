@@ -689,6 +689,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1292284412219630398, guid: 542c8098eaf38d646ac442c9ee48a50d,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -71.68393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292284412219630398, guid: 542c8098eaf38d646ac442c9ee48a50d,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -35.265015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292284412219630398, guid: 542c8098eaf38d646ac442c9ee48a50d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292284412219630398, guid: 542c8098eaf38d646ac442c9ee48a50d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542c8098eaf38d646ac442c9ee48a50d, type: 3}
 --- !u!33 &8653785528674688313
@@ -1415,7 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4a6e647c8db3a4a804e5d955140644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayGuideDelay: 3
+  DisplayGuideDelay: 2
   OfferDetailedInstructionsDelay: 8
   m_FeaturePoints: {fileID: 8675784031527785771}
   m_HandAnimation: {fileID: 8788247447935751635}
@@ -2060,6 +2080,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1783302254}
     m_Modifications:
+    - target: {fileID: 9069610747861039193, guid: 40ecabcd7b32e8a41b0867b602318d06,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -95.303345
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069610747861039193, guid: 40ecabcd7b32e8a41b0867b602318d06,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069610747861039193, guid: 40ecabcd7b32e8a41b0867b602318d06,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -41.541656
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069610747861039193, guid: 40ecabcd7b32e8a41b0867b602318d06,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069610747861039193, guid: 40ecabcd7b32e8a41b0867b602318d06,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 51
+      objectReference: {fileID: 0}
     - target: {fileID: 9069610747861039194, guid: 40ecabcd7b32e8a41b0867b602318d06,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2118,7 +2163,7 @@ PrefabInstance:
     - target: {fileID: 9069610747861039194, guid: 40ecabcd7b32e8a41b0867b602318d06,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 9069610747861039194, guid: 40ecabcd7b32e8a41b0867b602318d06,
         type: 3}
