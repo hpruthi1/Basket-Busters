@@ -14,7 +14,7 @@ public class CollisionDetection : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            ScoreText.text = "Score:" + (Score++);
+            ScoreText.text = "Score:" + (++Score);
         }
     }
 }

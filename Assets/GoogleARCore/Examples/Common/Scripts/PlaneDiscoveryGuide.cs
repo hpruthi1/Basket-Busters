@@ -67,7 +67,6 @@ namespace GoogleARCore.Examples.Common
         /// <summary>
         /// The Game Object that provides feature points visualization.
         /// </summary>
-        [Tooltip("The Game Object that provides feature points visualization.")]
         [SerializeField] private GameObject m_FeaturePoints = null;
 
         /// <summary>
@@ -185,9 +184,8 @@ namespace GoogleARCore.Examples.Common
         private void _OnOpenButtonClicked()
         {
             m_MoreHelpWindow.SetActive(true);
-
-            enabled = false;
             m_FeaturePoints.SetActive(false);
+            enabled = false;
             m_HandAnimation.enabled = false;
             m_SnackBar.SetActive(false);
         }

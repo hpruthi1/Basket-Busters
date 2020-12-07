@@ -16,7 +16,6 @@ public class PlaceHoop : MonoBehaviour
     private Dictionary<string, Transform> CreatedObjects;
     public AugmentedImageDatabase database;
     public Texture2D BallSpawner;
-    public TextMeshProUGUI PlaneCount;
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI BallCountText;
     
@@ -68,7 +67,6 @@ public class PlaceHoop : MonoBehaviour
 
         Session.GetTrackables<DetectedPlane>(allPlanes, TrackableQueryFilter.All);
         Session.GetTrackables<AugmentedImage>(trackedMarkers);
-        PlaneCount.text = "Plane Count:" + allPlanes.Count;
 
         foreach (AugmentedImage marker in trackedMarkers)
         {
