@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using GoogleARCore;
-
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BallControl : MonoBehaviour
